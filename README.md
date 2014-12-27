@@ -1,4 +1,4 @@
-[[https://raw.githubusercontent.com/Sciss/ScalaColliderAppTemplate/master/src/main/resources/doe/john/myscalacolliderapp/icon.png]]
+![https://raw.githubusercontent.com/Sciss/ScalaColliderAppTemplate/master/src/main/resources/doe/john/myscalacolliderapp/icon.png]
 
 # ScalaCollider Template App
 
