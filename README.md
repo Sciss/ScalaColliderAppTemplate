@@ -1,40 +1,18 @@
-## ScalaCollider Template App
+[[src/main/resources/doe/john/myscalacolliderapp/icon.png]]
 
-### statement
+# ScalaCollider Template App
 
-This is a template to make a ScalaCollider based OS X app, bundled with scsynth.
+## statement
 
-- Add your own code.
-- Build scsynth.
-- run 'appbundle' in sbt to repackage the app. This will create the whole osx app bundle.
+This is a template to make a [ScalaCollider](https://github.com/Sciss/ScalaCollider) based application.
+It assumes that SuperCollider (scsynth) is
+independently installed on the system.
 
-### Downloading
+Note that ScalaCollider is published under the GNU General Public License v2 (or newer, at your choice),
+so this applies to your project as well.
 
-You need to clone this project with submodules, e.g.
+Simply open `MyScalaColliderApp.scala` and add your own code.
 
-    git clone --recursive git://github.com/miguel-negrao/ScalaColliderAppTemplate.git
-
-### Build scsynth
-
-Note: You can use the `build_scsynth.sh` shell script to do this. The steps are:
-
-```sh
-cd scsynth
-mkdir build
-cd build
-cmake -DCMAKE_BUILD_TYPE=Release ..
-make install
-```
-
-### Building your app
-
-    sbt appbundle
-
-The result is a double-clickable standalone application `MyScalaColliderApp.app`.
-
-### requirements / installation
-
-Builds with sbt 0.11 and compiles against Scala 2.9.1 and Java 1.6. Depends on ScalaCollider.
-
-
+To run via sbt, simply execute `sbt run`. To build a standalone application, run `sbt assembly`.
+The resulting jar can be executed via `java -jar MyScalaColliderApp.jar`.
 
