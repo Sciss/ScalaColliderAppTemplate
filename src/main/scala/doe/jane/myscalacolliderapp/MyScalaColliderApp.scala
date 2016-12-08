@@ -1,17 +1,17 @@
-/* Published under the GNU GPL v2+, the same as ScalaCollider */
+/* Published under the GNU LGPL v2.1+, the same as ScalaCollider */
 
-package doe.john.myscalacolliderapp
+package doe.jane.myscalacolliderapp
 
 import javax.imageio.ImageIO
 import javax.swing.ImageIcon
 
+import de.sciss.synth.Ops._
 import de.sciss.synth._
-import ugen._
-import Ops._
+import de.sciss.synth.ugen._
 
+import scala.swing.Swing._
 import scala.swing.event.ValueChanged
-import scala.swing.{Alignment, BorderPanel, GridPanel, Slider, Label, MainFrame, Swing, Frame, SimpleSwingApplication}
-import Swing._
+import scala.swing.{Alignment, BorderPanel, Frame, GridPanel, Label, MainFrame, SimpleSwingApplication, Slider}
 
 object MyScalaColliderApp extends SimpleSwingApplication {
   lazy val top: Frame = {

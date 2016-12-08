@@ -1,16 +1,12 @@
 name           := "MyScalaColliderApp"
-
 version        := "0.1.0-SNAPSHOT"
-
-organization   := "doe.john"
-
-scalaVersion   := "2.11.4"
-
-licenses       := Seq("GPL v2+" -> url("http://www.gnu.org/licenses/gpl-2.0.txt"))
+organization   := "doe.jane"
+scalaVersion   := "2.11.8"
+licenses       := Seq("LGPL v2.1+" -> url("http://www.gnu.org/licenses/lgpl-2.1.txt"))
 
 libraryDependencies ++= Seq(
-  "de.sciss" %% "scalacollider" % "1.15.0",
-  "org.scala-lang.modules" %% "scala-swing" % "1.0.1"
+  "de.sciss" %% "scalacollider" % "1.22.2",
+  "org.scala-lang.modules" %% "scala-swing" % "1.0.2"
 )
 
 scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature", "-encoding", "utf8", "-Xfuture")
